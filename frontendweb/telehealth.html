@@ -56,34 +56,44 @@
 
     <!-- add off canvas nav here -->
     <main role="main" class="container-fluid pt-4 bg-custom">
-      <div class="row">
+      <div class="d-block paper card-1">
 
-        <div class="col-6 col-md-6 col-lg-6 invisible viewpoint-fadeInLeft" id="sidebar">
-          <div class="paper card card-1 bg-custom">
-            <div id="video" style="width:100%; background-color:pink">
-              <div id="subscriber"></div>
-              <div id="publisher"></div>
-              <!-- tokbox here -->
-            </div>
+        <div class="row">
+          <div class="text-center mx-auto">
+            <h4>Telehealth session:</h4>
+            <h3>Doctor Ma with patient Sarah Han</h3>
           </div>
+        </div>
 
-        </div><!--/span-->
+        <div class="row">
+          <div class="col-6 col-sm-12 col-md-8 col-lg-8 invisible viewpoint-fadeInLeft" id="sidebar">
+            <!-- <div class="paper card-1 bg-custom"> -->
+              <div id="videos" class="d-block">
+                <div id="subscriber" class="d-block"></div>
+                <div id="publisher" class="d-block"></div>
+                <!-- tokbox ends -->
+              </div>
+            <!-- </div> -->
 
-        <div class="col-6 col-md-6 col-lg-6 invisible viewpoint-fadeInRight">
-          <div class="paper card card-1 bg-custom">
+          </div><!--/span-->
 
-            <div id="video" style="width:100%; background-color: purple">
-              <h1>test test</h1>
-              <h4>Patient</h4>
-              <!-- tokbox here -->
-            </div>
+          <div class="col-6 col-sm-12 col-md-4 col-lg-4 invisible viewpoint-fadeInRight">
 
-          </div><!--/paper-->
-        </div><!--/span-->
-      <!-- off canvas links -->
-      </div><!--/row-->
+              <div id="videos">
+                <img class="d-block mx-auto p-2" style="max-width:100%" src="img/bug-bites/tick-03.jpg">
+                <div class="pl-1">
+
+                  <h1>Sarah Han</h1>
+                  <h4>Patient</h4>
+                  <h6>Sunday, May 6, 2018</h6>
+                </div>
+                <!-- tokbox ends -->
+              </div>
+
+          </div><!--/span-->
+        </div><!--/row-->
+      </div>
     </main><!--/.container-->
-    <!-- off canvas nav ends -->
 
 
     <footer class="container py-4 mt-4">

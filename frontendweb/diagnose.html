@@ -31,6 +31,9 @@
     #tick3 {
         display:none;
     }
+    #tick4 {
+        display:none;
+    }
 
     </style>
 
@@ -172,6 +175,18 @@
                 </div>
             </div>
 
+            <!-- tick3 -->
+            <div id="tick4" class="container image-content my-4 pb-4">
+                <!-- <img class="d-block mx-auto" style="max-width:500px;" src="img/bug-bites/tick-03.jpg">
+                <div class="text-center my-2">
+                    <h4>tick</h4> -->
+                    <div class="d-block my-4 pt-4 text-center">
+                        <h4 class="py-4">There are no more images to diagnose.</h4>
+                        <h5 class="py-4">Thank you.</h5>
+                    </div>
+                <!-- </div> -->
+            </div>
+
             
             <!-- end images to diagnose -->
 
@@ -251,60 +266,72 @@ $( document ).ready(function() {
     $('#not-correct-bee').click(function () {
         // $('.image-content').addClass( 'animated fadeInRight' );
         $('#bee').addClass( 'd-none' );
-        $('#mosquito').addClass( 'd-block animated fadeInRight' );
+        $('#mosquito').addClass( 'd-block animated ' );
     });
     $('#correct-bee').click(function () {
         // $('.image-content').addClass( 'animated fadeInLeft' );
         $('#bee').addClass( 'd-none' );
-        $('#mosquito').addClass( 'd-block animated fadeInLeft' );
+        $('#mosquito').addClass( 'd-block animated ' );
     });
 
     // mosquito to spider
     $('#not-correct-mosquito').click(function () {
         // $('.image-content').addClass( 'animated fadeInRight' );
         $('#mosquito').removeClass( 'd-block' );
-        $('#spider').addClass( 'd-block animated fadeInRight' );
+        $('#spider').addClass( 'd-block animated ' );
     });
     $('#correct-mosquito').click(function () {
         // $('.image-content').addClass( 'animated fadeInLeft' );
         $('#mosquito').removeClass( 'd-block' );
-        $('#spider').addClass( 'd-block animated fadeInLeft' );
+        $('#spider').addClass( 'd-block animated ' );
     });
 
     // spider to tick
     $('#not-correct-spider').click(function () {
         // $('.image-content').addClass( 'animated fadeInRight' );
         $('#spider').removeClass( 'd-block' );
-        $('#tick1').addClass( 'd-block animated fadeInRight' );
+        $('#tick1').addClass( 'd-block animated ' );
     });
     $('#correct-spider').click(function () {
         // $('.image-content').addClass( 'animated fadeInLeft' );
         $('#spider').removeClass( 'd-block' );
-        $('#tick1').addClass( 'd-block animated fadeInLeft' );
+        $('#tick1').addClass( 'd-block animated ' );
     });
 
     // tick1 to tick2
     $('#not-correct-tick1').click(function () {
         // $('.image-content').addClass( 'animated fadeInRight' );
         $('#tick1').removeClass( 'd-block' );
-        $('#tick2').addClass( 'd-block animated fadeInRight' );
+        $('#tick2').addClass( 'd-block animated ' );
     });
     $('#correct-tick1').click(function () {
         // $('.image-content').addClass( 'animated fadeInLeft' );
         $('#tick1').removeClass( 'd-block' );
-        $('#tick2').addClass( 'd-block animated fadeInLeft' );
+        $('#tick2').addClass( 'd-block animated' );
     });
 
     // tick2 to tick3
     $('#not-correct-tick2').click(function () {
         // $('.image-content').addClass( 'animated fadeInRight' );
         $('#tick2').removeClass( 'd-block' );
-        $('#tick3').addClass( 'd-block animated fadeInRight' );
+        $('#tick3').addClass( 'd-block animated' );
     });
     $('#correct-tick2').click(function () {
         // $('.image-content').addClass( 'animated fadeInLeft' );
         $('#tick2').removeClass( 'd-block' );
-        $('#tick3').addClass( 'd-block animated fadeInLeft' );
+        $('#tick3').addClass( 'd-block animated' );
+    });
+
+    // tick3 to none
+    $('#not-correct-tick3').click(function () {
+        // $('.image-content').addClass( 'animated fadeInRight' );
+        $('#tick3').removeClass( 'd-block' );
+        $('#tick4').addClass( 'd-block ' );
+    });
+    $('#correct-tick3').click(function () {
+        // $('.image-content').addClass( 'animated fadeInLeft' );
+        $('#tick3').removeClass( 'd-block' );
+        $('#tick4').addClass( 'd-block ' );
     });
 
 });
