@@ -54,3 +54,11 @@ body, html {
     border: 5px solid #5cb0b1;
     border-radius: 3px;
 }
+.thermal-image{
+    position: absolute;
+    width: 134px;
+    right: -16px;
+    border: 5px solid #5cb0b1;
+    border-radius: 3px;
+    top: -16px;
+}
