@@ -1,0 +1,2 @@
+caffe_model/caffe_model_1_iter_1000.caffemodel filter=lfs diff=lfs merge=lfs -text
+caffe_model/caffe_model_1_iter_1000.solverstate filter=lfs diff=lfs merge=lfs -text
